@@ -70,7 +70,7 @@ public class Stream_05_Test {
         // TODO utiliser la méthode java.nio.file.Files.lines pour créer un stream de lignes du fichier naissances_depuis_1900.csv
         // Le bloc try(...) permet de fermer (close()) le stream après utilisation
         try (Stream<String> lines = null) {
-
+        	java.nio.file.Files.lines(NAISSANCES_DEPUIS_1900_CSV));
             // TODO construire une MAP (clé = année de naissance, valeur = somme des nombres de naissance de l'année)
             Map<String, Integer> result = null;
 
